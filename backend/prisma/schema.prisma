@@ -1,0 +1,23 @@
+// Prisma schema for 001-authentication. See specs/001-authentication/data-model.md.
+// UserRepository is the ONLY module that imports the Prisma client for users
+// (Repository Pattern, constitution Principle III).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([email])
+}

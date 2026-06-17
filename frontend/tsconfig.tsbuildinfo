@@ -1,1 +1,1 @@
-{"root":["./src/main.tsx","./tests/setup.ts","./tests/smoke.test.ts"],"version":"5.9.3"}
+{"root":["./src/main.tsx","./src/app/homepage.tsx","./src/app/queryclient.ts","./src/app/router.tsx","./src/features/auth/context/authcontext.tsx","./src/lib/api-client.ts","./src/lib/token-store.ts","./tests/setup.ts","./tests/smoke.test.ts"],"version":"5.9.3"}
