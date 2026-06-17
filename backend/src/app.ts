@@ -4,6 +4,7 @@
  */
 import express, { type Express } from 'express';
 import { errorHandler } from './middleware/error-handler.js';
+import { authRouter } from './routes/auth.routes.js';
 
 export function createApp(): Express {
   const app = express();
@@ -15,7 +16,8 @@ export function createApp(): Express {
     res.json({ status: 'ok' });
   });
 
-  // Feature routers are mounted here (WU3 adds POST /api/auth/login, etc.).
+  // Feature routers.
+  app.use('/api/auth', authRouter);
 
   // Error handler MUST be registered last.
   app.use(errorHandler);
