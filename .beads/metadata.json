@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "metaswarm_training",
+  "project_id": "e72455fa-acc0-479e-9727-2ffa2f6f5d7d"
+}
