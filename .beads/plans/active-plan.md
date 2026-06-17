@@ -3,7 +3,16 @@ status: in-progress
 epic: metaswarm-training-haz
 feature: 001-authentication
 created: 2026-06-17
+progress: WU1+WU2+WU3 complete (MVP shipped); paused at human checkpoint #1
+remaining: WU4 (logout), WU5 (protected/me), WU6 (polish), metaswarm-training-upv (FR-012 e2e test)
 ---
+
+## Progress log
+
+- 2026-06-17: WU1 (setup), WU2 (foundational), WU3 (US1 login MVP) complete, reviewed
+  (adversarial PASS each), committed on branch `001-authentication`. 30 backend + 7
+  frontend tests green. MVP validated live. PAUSED at checkpoint #1 by user request.
+  Resume with `bd ready` → WU4 (metaswarm-training-79s).
 
 # Implementation Plan: Authentication (001-authentication)
 
